@@ -1,0 +1,23 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: $bg-color;
+	color: $text-color;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: $m-size;
+}
+
+.main {
+	max-width: 800px;
+	margin: auto;
+}
+
+a, a:link, a:visited, a:active {
+	color: inherit;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+	user-select: none;
+}

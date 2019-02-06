@@ -1,0 +1,42 @@
+.email-list-item-container{
+    display: flex;
+    flex-direction: column;
+    
+    & * {
+        transition: all ease-in-out .3s;
+    }
+    .email-list-item {
+        border-bottom: 1px solid black;
+        padding: 1rem;
+    }
+    h4, h5, p {
+        margin: .5rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+    }
+    p {
+        -webkit-line-clamp: 2;
+        color: $paragraph-color;
+    }
+    .sub-outer {
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .hidden {
+        max-height: 100px;
+    }
+    .active {
+        background: #ccc;
+    }
+    .sub-item {
+        background: #ddd;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
